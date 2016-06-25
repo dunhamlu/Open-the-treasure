@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.warp {
+    width: 1000px;
+    height: 999999px;
+    margin: 50px auto;
+    //border: 1px solid red; //删除
+}
+
+.index-list {
+    width: 500px;
+    height: 20px;
+    border: 1px solid red; //删除
+}
+
+.index-list li {
+    list-style: none;
+    width: auto;
+    height: 20px;
+    float: left;
+    margin-right: 8px;
+    line-height: 20px;
+    border: 1px solid red; //删除
+}
+
+.index-list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#main {
+    margin: 5px 0 10px;
+    border: 1px solid #000;
+}
+
+footer {
+    width: 1000px;
+    text-align: center;
+    border: 1px solid red; //删除
+}
+
+.item {
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: #cecece;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+
+.item b {
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    background: #f00;
+    position: absolute;
+}
+
+.item b.active {
+    background: blue;
+}
+
+.box {
+    background: #f00;
+    width: 400px;
+    height: 300px;
+}

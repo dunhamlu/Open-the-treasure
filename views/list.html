@@ -1,0 +1,24 @@
+<div>
+    <div ng-repeat="i in lArr">
+    	<span class="item">{{i.name}}<b ng-class="{true:'active',false:'inactive'}[lArr[$index].isActive]"></b></span>
+    	<div>
+    		<input type="text" ng-model="txt" ng-keyup="changeTxt(txt,i.id)" />
+    	</div>
+    </div>
+    <button ng-click="sub()">提交</button>
+
+	<select ng-model="selected" ng-options="(i.name+'------'+i.age) for i in newArr">
+    	<option value="">---选择翻译语言---</option>
+    </select>
+    {{selected}}
+
+    <div class="box" ng-if="isShow">
+    	<select ng-model="selected" ng-options="l for l in sArr">
+    		<option value="">---选择翻译语言---</option>
+    	</select>
+
+    	<div ng-repeat="i in lArr">
+    		<input type="checkbox" ng-checked="!i.isActive" />{{i.name}}
+    	</div>
+    </div>
+</div>

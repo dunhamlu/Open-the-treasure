@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title page-title>angular练习1</title>
+</head>
+
+<body>
+    <div ui-view class="warp"></div>
+</body>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/ocLazyLoad.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/config.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/directive.js"></script>
+<script type="text/javascript"></script>
+<!--<script>
+    /*
+        javascript是由谷歌开发的mvc框架
+        m:model
+        v:views
+        c:controllers
+        优点：数据与表现完全分离；
+            数据的双向绑定；
+            views层与controller层，共享数据
+        
+    */
+    /*
+        总结：它是在views层调用controllers层的东西，即在html调用js中的代码
+        
+    */
+    //ng-app是用来链接入口文件的，下面的所有的代码都基于app这个变量,$scope是作用域
+  /*  
+    var app=angular.module("app",[]);
+    app.controller("main",function($scope){
+        var num="2345";
+        console.log($scope)
+        //在作用域上定义变量，然后在html中用{{}}调用,调用时写定义的变量名
+        $scope.txt="1406c";
+        $scope.hello="hello";
+        $scope.show=function(nums){
+            $scope.$broadcast("datalist",nums)
+            console.log(nums)
+        }
+        $scope.$on("childdatas",function(err,data){
+            console.log(data)
+        })
+        
+    })
+    
+    app.controller("render",function($scope){
+        console.log($scope.$parent)
+        //也可以在$scope作用域上绑定方法
+        $scope.json=[
+            {name:"zs","age":22},
+            {name:"ls","age":42},
+            {name:"zw","age":232}
+        ]
+        $scope.getAge=function(num){
+            console.log(num)
+        }
+        $scope.$on("mainlist",function(err,data){
+            console.log(data)
+        })
+        var age="220";
+        $scope.$emit("childdatas",age)
+    })
+    */
+</script>-->
+
+</html>
